@@ -5,3 +5,8 @@
 .Rdata
 .httr-oauth
 .DS_Store
+Analise_Modelo_ENEM.Rproj
+dados/ITENS_PROVA_2018.csv
+dados/MICRODADOS_ENEM_2018.csv
+dados/DICIONÁRIO/Dicionário_Microdados_Enem_2018.ods
+dados/DICIONÁRIO/Dicionário_Microdados_Enem_2018.xlsx
