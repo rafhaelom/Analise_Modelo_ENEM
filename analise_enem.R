@@ -1,9 +1,21 @@
-library(tidyverse)
+# Importando Bibliotecas.
+library(usethis)
 library(readr)
 
-prova <- read.csv("dados/ITENS_PROVA_2018.csv", header = TRUE, sep = ";")
-print(prova)
-View(prova)
+# Leitura de dados.
+df <- read.csv("dados/MICRODADOS_ENEM_2018.csv", header = TRUE, 
+               sep = ";", nrows = 300000)
+View(df)
+View(head(df))
+View(tail(df))
 
-dados <- read.csv("dados/MICRODADOS_ENEM_2018.csv", header = TRUE, sep = ";")
-print(dados)
+# Análise Exploratória
+dim(df) # Proporção dos dados.
+colnames(df) # Nomes de colunas.
+ncol(df) # Quantidade de colunas.
+nrow(df) # Quantidade de linhas.
+str(df) # Mostra a estrutura dos dados.
+
+summary(df) # Estatísticas Básicas.
+
+subset(df, SG_UF_RESIDENCIA = "DF")
